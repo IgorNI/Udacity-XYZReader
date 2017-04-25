@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.xyzreader.ui.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.xyzreader.ui.MaxWidthLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxWidth="@dimen/detail_card_max_width"
+            android:background="#fff"
+            android:layout_marginTop="@dimen/detail_card_top_margin">
+
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/article_body"
+                style="?android:attr/textAppearanceMedium"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:paddingBottom="@dimen/detail_body_bottom_margin"
+                android:textColor="@color/text_color"
+                android:textColorLink="@color/theme_accent"
+                android:textSize="@dimen/detail_body_text_size"
+                android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
+
+        </com.example.xyzreader.ui.MaxWidthLinearLayout>
+    </FrameLayout>
+</com.example.xyzreader.ui.ObservableScrollView>

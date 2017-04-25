@@ -1,0 +1,29 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/draw_insets_frame_layout"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp">
+    <include layout="@layout/collaps_toolbar"/>
+    <include layout="@layout/artical_title_layout"/>
+</android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/artical_body_layout"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/share_fab"
+        android:stateListAnimator="@anim/fab_state_list_anim"
+        android:background="@drawable/add_fab_background"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_share"
+        app:elevation="@dimen/fab_elevation"
+        android:contentDescription="@string/action_share" />
+
+</android.support.design.widget.CoordinatorLayout>
