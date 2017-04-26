@@ -17,11 +17,15 @@
 
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+    <style name="Theme.MyTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorPrimaryDark">@color/material_grey</item>
+        <item name="colorAccent">@color/theme_accent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.Bacon.Detail">
+    <style name="Theme.MyTheme.Detail">
         <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
     </style>
 
