@@ -25,4 +25,6 @@
     <color name="color_toolbar">#512da8</color>
     <color name="floating_color">#f4511e</color>
     <color name="text_color">#6000</color>
+    <color name="white">#ffffffff</color>
+    <color name="material_grey">#263238</color>
 </resources>

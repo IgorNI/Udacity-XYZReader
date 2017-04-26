@@ -46,7 +46,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_article_list);
 
         setSupportActionBar(mToolbar);
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
+
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 

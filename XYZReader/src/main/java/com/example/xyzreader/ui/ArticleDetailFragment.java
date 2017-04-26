@@ -134,13 +134,6 @@ public class ArticleDetailFragment extends Fragment implements
         mCollapsingToolbarLayout = (CollapsingToolbarLayout) mRootView.findViewById(R.id.collaps);
         mToolbar = (Toolbar) mRootView.findViewById(R.id.toolbar);
         setToolbar();
-        mToolbar.setNavigationIcon(R.drawable.ic_arrow_back);
-        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getActivity().finish();
-            }
-        });
         mStatusBarColorDrawable = new ColorDrawable(0);
         mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -153,6 +146,10 @@ public class ArticleDetailFragment extends Fragment implements
         });
         bindViews();
         updateStatusBar();
+        boolean shouldAddScrollViewTranslations = getResources().getBoolean(R.bool.add_scroll_view_translations);
+        if (shouldAddScrollViewTranslations) {
+            addScrollViewTranslations();
+        }
         return mRootView;
     }
 
@@ -160,6 +157,28 @@ public class ArticleDetailFragment extends Fragment implements
         mToolbar.setTitle("");
         ((AppCompatActivity)getActivity()).setSupportActionBar(mToolbar);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        mToolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+//        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                getActivity().finish();
+//            }
+//        });
+    }
+
+    private void addScrollViewTranslations() {
+        mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
+            @Override
+            public void onScrollChanged() {
+                mScrollY = mScrollView.getScrollY();
+                ViewGroup bodyContainer = (ViewGroup) mRootView.findViewById(R.id.body_container);
+//                getActivityCast().onUpButtonFloorChanged(itemId, ArticleDetailFragment.this);
+                int translationY = (int) (mScrollY - mScrollY / PARALLAX_FACTOR);
+                bodyContainer.setTranslationY(-translationY);
+                mPhotoView.setTranslationY(translationY * PARALLAX_FACTOR);
+                updateStatusBar();
+            }
+        });
     }
 
     private void updateStatusBar() {
@@ -174,7 +193,6 @@ public class ArticleDetailFragment extends Fragment implements
                     (int) (Color.blue(mMutedColor) * 0.9));
         }
         mStatusBarColorDrawable.setColor(color);
-//        mCoordinatorLayout.setInsetBackground(mStatusBarColorDrawable);
     }
 
     static float progress(float v, float min, float max) {

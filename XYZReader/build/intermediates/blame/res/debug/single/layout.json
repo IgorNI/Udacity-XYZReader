@@ -116,6 +116,10 @@
         "source": "/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/res/layout/notification_template_part_chronometer.xml"
     },
     {
+        "merged": "/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/detail_photo.xml",
+        "source": "/Users/ni/Downloads/xyzreader/XYZReader/src/main/res/layout/detail_photo.xml"
+    },
+    {
         "merged": "/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
         "source": "/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.2.0/res/layout/design_bottom_navigation_item.xml"
     },

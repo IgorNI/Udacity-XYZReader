@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CollapsingToolbarLayout android:id="@+id/collaps"
+<android.support.design.widget.CollapsingToolbarLayout
+    android:id="@+id/collaps"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:title=""
     app:layout_scrollFlags="scroll|exitUntilCollapsed"
-    android:fitsSystemWindows="true"
-    app:contentScrim="?attr/colorPrimary"
-    app:expandedTitleMarginStart="48dp"
-    app:expandedTitleMarginEnd="64dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    app:title=""
+    app:titleEnabled="false"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/detail_photo" />
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:layout_width="match_parent"
-        android:layout_height="?android:actionBarSize"
-        android:background="@color/color_toolbar">
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin">
     </android.support.v7.widget.Toolbar>
-    <ImageView
-        android:id="@+id/photo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 </android.support.design.widget.CollapsingToolbarLayout>

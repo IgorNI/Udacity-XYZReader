@@ -1,4 +1,4 @@
-#Tue Apr 25 11:13:14 CST 2017
+#Wed Apr 26 09:51:26 CST 2017
 base.0=/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_8a29e21a8278a49b9a1ab84904fe6df12cf2a64a
 renamed.1=classes.dex
 renamed.0=classes2.dex

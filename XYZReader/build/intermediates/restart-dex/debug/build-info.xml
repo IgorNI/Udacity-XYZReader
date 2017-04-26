@@ -5,52 +5,39 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="687076593660564"
+    timestamp="708925183241183"
     token="4539645913237239495"
-    verifier="METHOD_DELETED" >
+    verifier="STATIC_INITIALIZER_CHANGE" >
 
     <task
         name="javac"
-        duration="814" />
+        duration="904" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="29" />
+        duration="15" />
     <task
         name="verifier"
-        duration="5" />
+        duration="24" />
 
     <artifact
-        location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+        location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
         type="DEX" />
 
     <build
-        timestamp="673680912668049"
+        timestamp="708823857112834"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/ni/Downloads/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="686524803306910"
-        verifier="CLASS_ADDED" >
+        timestamp="708925183241183"
+        verifier="STATIC_INITIALIZER_CHANGE" >
         <artifact
-            location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="687076593660564"
-        verifier="METHOD_DELETED" >
-        <artifact
-            location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
             type="DEX" />
     </build>
 
