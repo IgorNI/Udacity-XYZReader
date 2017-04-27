@@ -9,6 +9,7 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -38,6 +39,7 @@ public class ArticleListActivity extends AppCompatActivity implements
 
     private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
+    private AppBarLayout mAppBarLayout;
     private RecyclerView mRecyclerView;
 
     @Override
@@ -48,6 +50,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         setSupportActionBar(mToolbar);
 
 
+//        mAppBarLayout = (AppBarLayout) findViewById(R.id.swipe_refresh_layout);
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
