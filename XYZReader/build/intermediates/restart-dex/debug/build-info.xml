@@ -5,8 +5,9 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="14818268217182"
-    token="4539645913237239495" >
+    timestamp="30410663245615"
+    token="4539645913237239495"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
@@ -21,20 +22,36 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
+
     <build
-        timestamp="13555087957957"
+        timestamp="29446118672674"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/ni/Downloads/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="14775217805542"
+        timestamp="29935566263682"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="30410663245615"
         verifier="COMPATIBLE" >
         <artifact
             location="/Users/ni/Downloads/xyzreader/XYZReader/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
             type="RESOURCES" />
     </build>
-    <build timestamp="14818268217182" />
 
 </instant-run>
